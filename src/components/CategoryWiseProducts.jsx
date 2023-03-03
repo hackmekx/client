@@ -113,6 +113,7 @@ const CategoryWiseProducts = ({ item, id }) => {
     try {
       await axios
         .post("http://localhost:5000/api/enquery", {
+          id: item.id,
           name: name,
           email: email,
           phoneNumber: phoneNumber,
