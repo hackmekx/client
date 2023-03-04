@@ -23,7 +23,7 @@ const Categories = () => {
 
   const getCategories = async () => {
     axios
-      .get("http://13.232.204.108:5000/api/getCategory")
+      .get("https://easy-lime-bonobo-sari.cyclic.app/api/getCategory")
       .then((res) => {
         const data = res.data.data;
         setData(data);

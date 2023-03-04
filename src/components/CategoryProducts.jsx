@@ -16,7 +16,7 @@ const CategoryProducts = (props) => {
   const [data, setData] = useState([]);
   const getProduct = async () => {
     axios
-      .get("http://13.232.204.108:5000/api/getProductCategorywise", {
+      .get("https://easy-lime-bonobo-sari.cyclic.app/api/getProductCategorywise", {
         params: {
             title: category
         }

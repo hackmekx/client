@@ -67,7 +67,7 @@ const Newsletter = () => {
 
     const handleClick = async () => {
         try {
-            await axios.post("http://13.232.204.108:5000/api/newsletter", {
+            await axios.post("https://easy-lime-bonobo-sari.cyclic.app/api/newsletter", {
                 email: email,
             }).then((res) => {
                 alert("successfull");
