@@ -16,7 +16,7 @@ const Products = () => {
   const [data, setData] = useState([]);
   const getProduct = async () => {
     axios
-      .get("https://mysterious-crab-baseball-cap.cyclic.app/api/getProducts")
+      .get("http://13.232.204.108:5000/api/getProducts")
       .then((res) => {
         const data = res.data.data;
         setData(data);

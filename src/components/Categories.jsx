@@ -23,7 +23,7 @@ const Categories = () => {
 
   const getCategories = async () => {
     axios
-      .get("https://mysterious-crab-baseball-cap.cyclic.app/api/getCategory")
+      .get("http://13.232.204.108:5000/api/getCategory")
       .then((res) => {
         const data = res.data.data;
         setData(data);

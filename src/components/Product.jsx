@@ -112,7 +112,7 @@ const Product = ({ item, id }) => {
   const handleSubmit = async () => {
     try {
       await axios
-        .post("http://localhost:5000/api/enquery", {
+        .post("http://13.232.204.108:5000/api/enquery", {
           id: item.id,
           name: name,
           email: email,

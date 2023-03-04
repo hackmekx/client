@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import CategoryWiseProducts from "./CategoryWiseProducts"
 import axios from "axios";
-import Categories from "./Categories";
 
 const Container = styled.div`
   display: flex;
@@ -17,7 +16,7 @@ const CategoryProducts = (props) => {
   const [data, setData] = useState([]);
   const getProduct = async () => {
     axios
-      .get("http://localhost:5000/api/getProductCategorywise", {
+      .get("http://13.232.204.108:5000/api/getProductCategorywise", {
         params: {
             title: category
         }
